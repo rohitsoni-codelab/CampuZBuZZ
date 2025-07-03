@@ -1,66 +1,64 @@
- <style>
-        :root {
-            --primary: #4f46e5;
-            --secondary: #10b981;
-            --dark: #1e293b;
-            --light: #f8fafc;
-        }
+ :root {
+     --primary: #4f46e5;
+     --secondary: #10b981;
+     --dark: #1e293b;
+     --light: #f8fafc;
+ }
 
-        .club-card {
-            transition: all 0.3s ease;
-            border-left: 4px solid var(--primary);
-        }
+ .club-card {
+     transition: all 0.3s ease;
+     border-left: 4px solid var(--primary);
+ }
 
-        .club-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
+ .club-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+ }
 
-        .coding {
-            border-left-color: #3b82f6 !important;
-        }
+ .coding {
+     border-left-color: #3b82f6 !important;
+ }
 
-        .hardware {
-            border-left-color: #ef4444 !important;
-        }
+ .hardware {
+     border-left-color: #ef4444 !important;
+ }
 
-        .rhetoric {
-            border-left-color: #10b981 !important;
-        }
+ .rhetoric {
+     border-left-color: #10b981 !important;
+ }
 
-        .sports {
-            border-left-color: #f59e0b !important;
-        }
+ .sports {
+     border-left-color: #f59e0b !important;
+ }
 
-        .yoga {
-            border-left-color: #8b5cf6 !important;
-        }
+ .yoga {
+     border-left-color: #8b5cf6 !important;
+ }
 
-        .social {
-            border-left-color: #ec4899 !important;
-        }
+ .social {
+     border-left-color: #ec4899 !important;
+ }
 
-        .event-badge {
-            font-size: 0.75rem;
-            padding: 0.25rem 0.5rem;
-            border-radius: 9999px;
-        }
+ .event-badge {
+     font-size: 0.75rem;
+     padding: 0.25rem 0.5rem;
+     border-radius: 9999px;
+ }
 
-        .modal {
-            transition: opacity 0.2s ease;
-        }
+ .modal {
+     transition: opacity 0.2s ease;
+ }
 
-        .fade-in {
-            animation: fadeIn 0.3s ease-in;
-        }
+ .fade-in {
+     animation: fadeIn 0.3s ease-in;
+ }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+     }
 
-            to {
-                opacity: 1;
-            }
-        }
-    </style>
+     to {
+         opacity: 1;
+     }
+ }
