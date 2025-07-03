@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPUS BUZZ - College Activity Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://yt3.googleusercontent.com/OBVXZOkVimsqfUZE5OnoAYAEV5-jz93ySpsCeIgwB1sYgfH2zL_BRhTTXs9fIotbm7TOTC1-=s900-c-k-c0x00ffffff-no-rj">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="https://placehold.co/40x40"
+                            alt="Campus Buzz logo with vibrant college colors and a megaphone icon"
+                            class="h-8 w-8 rounded-full">
+                        <span class="ml-2 text-xl font-bold text-indigo-600">CAMPUS BUZZ</span>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#"
+                            class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                        <a href="#clubs"
+                            class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Clubs</a>
+                        <a href="#events"
+                            class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Events</a>
+                        <a href="#about"
+                            class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">About</a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <button onclick="openModal('login-modal')"
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium">Login</button>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-indigo-700 text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                Welcome to <span class="text-yellow-300">CAMPUS BUZZ</span>
+            </h1>
+            <p class="mt-6 max-w-lg mx-auto text-xl">
+                Your gateway to college clubs, events, and campus activities. Connect, learn, and grow with your
+                community.
+            </p>
+            <div class="mt-10 flex justify-center space-x-4">
+                <a href="#clubs"
+                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50">
+                    Explore Clubs
+                </a>
+                <a href="#events"
+                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-800 bg-opacity-70 hover:bg-opacity-90">
+                    View Events
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Events -->
+    <div id="events" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Featured Events</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Upcoming Highlights
+                </p>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Hackathon Card -->
+                <div class="club-card bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-indigo-100 p-3 rounded-full">
+                            <i class="fas fa-laptop-code text-indigo-600 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">CodeStorm 2025</h3>
+                            <span class="event-badge bg-indigo-100 text-indigo-800">Hackathon</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600">24-hour coding sprint featuring challenges across multiple domains.</p>
+                        <div class="mt-4 flex items-center text-sm text-gray-500">
+                            <i class="far fa-calendar mr-2"></i>
+                            <span>Jan 15-16, 2025</span>
+                        </div>
+                        <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Tech Innovation Center</span>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <button onclick="showEventDetails('codestorm')"
+                            class="text-indigo-600 hover:text-indigo-800 text-sm font-medium">
+                            View details <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Coding Club Event -->
+                <div class="club-card bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full">
+                            <i class="fas fa-code text-blue-600 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Weekly Code Battles</h3>
+                            <span class="event-badge bg-blue-100 text-blue-800">Coding Club</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600">Competitive problem-solving sessions with peers.</p>
+                        <div class="mt-4 flex items-center text-sm text-gray-500">
+                            <i class="far fa-calendar mr-2"></i>
+                            <span>Every Wednesday</span>
+                        </div>
+                        <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Computer Lab 3</span>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <button onclick="showEventDetails('code-battles')"
+                            class="text-blue-600 hover:text-blue-800 text-sm font-medium">
+                            View details <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sports Event -->
+                <div class="club-card bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-yellow-100 p-3 rounded-full">
+                            <i class="fas fa-running text-yellow-600 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Intra-College Football League</h3>
+                            <span class="event-badge bg-yellow-100 text-yellow-800">Sports Club</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600">Inter-departmental football competition with exciting prizes.</p>
+                        <div class="mt-4 flex items-center text-sm text-gray-500">
+                            <i class="far fa-calendar mr-2"></i>
+                            <span>Starting Feb 1</span>
+                        </div>
+                        <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>College Sports Ground</span>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <button onclick="showEventDetails('football-league')"
+                            class="text-yellow-600 hover:text-yellow-800 text-sm font-medium">
+                            View details <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <a href="#all-events" class="text-indigo-600 hover:text-indigo-800 font-medium">
+                    View all upcoming events <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clubs Section -->
+    <div id="clubs" class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Our Clubs</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Find Your Community
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Join one of our vibrant clubs and connect with like-minded students.
+                </p>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Coding Club -->
+                <div class="club-card coding bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full">
+                            <i class="fas fa-code text-blue-600 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Coding Club</h3>
+                            <span class="event-badge bg-blue-100 text-blue-800">Tech</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600">Weekly programming challenges, hackathons, and tech workshops to
+                            enhance your coding skills.</p>
+                        <div class="mt-4">
+                            <h4 class="text-sm font-medium text-gray-900">Upcoming Events:</h4>
+                            <ul class="mt-2 text-sm text-gray-600">
+                                <li>Weekly Code Battles</li>
+                                <li>Leetcode League</li>
+                                <li>Build with JS</li>
+                                <li>Git & GitHub Mastery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hardware Club -->
+                <div class="club-card hardware bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-red-100 p-3 rounded-full">
+                            <i class="fas fa-cogs text-red-600 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Hardware Club</h3>
+                            <span class="event-badge bg-red-100 text-red-800">Engineering</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600">Hands-on workshops and competitions focused on robotics, IoT, and
+                            electronics.</p>
+                        <div class="mt-4">
+                            <h4 class="text-sm font-medium text-gray-900">Upcoming Events:</h4>
+                            <ul class="mt-2 text-sm text-gray-600">
+                                <li>RoboRush</li>
+                                <li>Arduino 101</li>
+                                <li>IOT Weekend Build</li>
+                                <li>Drone Demo Day</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rhetoric Club -->
+                <div class="club-card rhetoric bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-green-100 p-3 rounded-full">
+                            <i class="fas fa-comments text-green-600 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Rhetoric Club</h3>
+                            <span class="event-badge bg-green-100 text-green-800">Literature</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600">Explore literature, oratory, and creative writing through engaging
+                            activities.</p>
+                        <div class="mt-4">
+                            <h4 class="text-sm font-medium text-gray-900">Upcoming Events:</h4>
+                            <ul class="mt-2 text-sm text-gray-600">
+                                <li>Open Mic Night</li>
+                                <li>Debate Mania</li>
+                                <li>Flash Fiction Jam</li>
+                                <li>SpeechCraft</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports Club -->
+                <div class="club-card sports bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-yellow-100 p-3 rounded-full">
+                            <i class="fas fa-futbol text-yellow-600 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Sports Club</h3>
+                            <span class="event-badge bg-yellow-100 text-yellow-800">Athletics</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600">Participate in various sports and competitions to stay active and
+                            healthy.</p>
+                        <div class="mt-4">
+                            <h4 class="text-sm font-medium text-gray-900">Upcoming Events:</h4>
+                            <ul class="mt-2 text-sm text-gray-600">
+                                <li>Intra-College Football League</li>
+                                <li>Table Tennis Singles & Doubles</li>
+                                <li>Cricket Championship</li>
+                                <li>Chess Masters’ Cup</li>
+                                <li>Track & Field Trials</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yoga Club -->
+                <div class="club-card yoga bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-purple-100 p-3 rounded-full">
+                            <i class="fas fa-spa text-purple-600 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Yoga Club</h3>
+                            <span class="event-badge bg-purple-100 text-purple-800">Wellness</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600">Focus on mental and physical wellness through yoga and mindfulness
+                            practices.</p>
+                        <div class="mt-4">
+                            <h4 class="text-sm font-medium text-gray-900">Upcoming Events:</h4>
+                            <ul class="mt-2 text-sm text-gray-600">
+                                <li>Sunrise Yoga</li>
+                                <li>Power Yoga Weekend</li>
+                                <li>Breath & Balance</li>
+                                <li>Stress Detox</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Activity Club -->
+                <div class="club-card social bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-pink-100 p-3 rounded-full">
+                            <i class="fas fa-users text-pink-600 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Social Activity Club</h3>
+                            <span class="event-badge bg-pink-100 text-pink-800">Community</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600">Engage in community service and social initiatives to make a
+                            difference.</p>
+                        <div class="mt-4">
+                            <h4 class="text-sm font-medium text-gray-900">Upcoming Events:</h4>
+                            <ul class="mt-2 text-sm text-gray-600">
+                                <li>Campus Clean-Up Drive</li>
+                                <li>Blood Donation Camp</li>
+                                <li>Visit to Orphanage</li>
+                                <li>Clothes Donation Campaign</li>
+                                <li>Eco Awareness Flash Mob</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm">© 2025 CAMPUS BUZZ. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-gray-300">Privacy Policy</a>
+                <span class="mx-2">|</span>
+                <a href="#" class="text-gray-400 hover:text-gray-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal fixed inset-0 z-50 hidden bg-gray-800 bg-opacity-50">
+        <div class="flex items-center justify-center h-full">
+            <div class="bg-white rounded-lg p-6 w-96">
+                <h2 class="text-lg font-bold mb-4">Login</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                        <input type="text" id="username"
+                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                        <input type="password" id="password"
+                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                            required>
+                    </div>
+                    <div class="flex justify-end">
+                        <button type="button" onclick="closeModal('login-modal')"
+                            class="text-gray-500 hover:text-gray-700">Cancel</button>
+                        <button type="submit" class="ml-4 bg-indigo-600 text-white px-4 py-2 rounded-md">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+        }
+
+        function showEventDetails(eventId) {
+            alert("Details for " + eventId + " will be available soon!");
+        }
+    </script>
+</body>
+
+</html>
